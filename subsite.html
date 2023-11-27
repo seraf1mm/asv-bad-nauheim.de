@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASV Galerie</title>
+    <link rel="shortcut icon" href="images/lol2.jpg">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Poppins, sans-serif;
+    }
+
+    div.container {
+        width: 1920px;
+        height: auto;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -34px;
+    }
+
+    div.header {
+        width: 1920px;
+        height: 1080px;
+        background-color: #007fff;
+    }
+
+
+    div.gallery {
+        width: 1920px;
+        height: 980px;
+        background-color: #315172;
+    }
+
+
+    .four-images-1 {
+        width: 1920px;
+        height: auto;
+    }
+
+    .four-images-2 {
+        width: 1920px;
+        height: auto;
+    }
+
+    button {
+        background-color: #00a0ff;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: 1px solid #0066cc;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 40px;
+    }
+
+    button:hover {
+        background-color: #00c0ff;
+    }
+
+    div.four-images-1 img {
+        width: 20%;
+    }
+
+    .four-images-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .image-container {
+        position: relative;
+        width: 25%;
+        height: 300px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .image-container:hover img {
+        transform: scale(1.05);
+    }
+
+    .image-1 {
+        order: 2;
+    }
+
+    .image-2 {
+        order: 1;
+    }
+
+    .image-3 {
+        order: 4;
+    }
+
+    .image-4 {
+        order: 3;
+    }
+
+    .image-5 {
+        order: 5;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+
+            <h1 style="font-size: 50px; padding-left: 280px; padding-top: 320px;">Gewässer Galerie</h1>
+
+            <div class="text" style="width: 35%; font-size: 24px; padding-left: 190px; text-align: center; ">
+                <p>Willkommen in der Gewässer Galerie des Angeln Sport Verein Bad Nauheim. Hier finden Sie eine Sammlung
+                    von
+                    Bildern
+                    von Gewässern, an denen wir Angeln anbieten. Die Bilder zeigen die Schönheit und Vielfalt unserer
+                    Gewässer. Sie werden Sie inspirieren, mehr über das Angeln zu erfahren und es auszuprobieren.</p>
+            </div>
+
+            <div class="image">
+                <img src="images-subsite/2.jpg"
+                    style="float: right; margin-top: -500px; margin-right: 100px; height: 600px; border-radius: 10px;"
+                    alt="bild">
+            </div>
+            <a href="index.html" style="padding-left: 400px;font-size: 18px;"><button>
+                    Zurück zur Start-seite
+                </button></a>
+        </div>
+        <div class="gallery" style="margin-top: -15px;">
+            <div class="four-images-gallery">
+                <div class="image-container image-1">
+                    <img src="images-subsite/forest-1869713_640.jpg" alt="Forest"
+                        style="max-width: 100%; max-height: 100%;">
+                </div>
+                <div class="image-container image-2">
+                    <img src="images-subsite/iceland-5104370_640.jpg" alt="Iceland"
+                        style="max-width: 100%; max-height: 100%;">
+                </div>
+                <div class="image-container image-3">
+                    <img src="images-subsite/lake-3397784_640.jpg" alt="Lake"
+                        style="max-width: 100%; max-height: 100%;">
+                </div>
+                <div class="image-container image-4">
+                    <img src="images-subsite/mountains-1587287_640.jpg" alt="Mountains"
+                        style="max-width: 100%; max-height: 100%;">
+                </div>
+                <div class="image-container image-5">
+                    <img src="images-subsite/panorama-3122181_640.jpg" alt="Panorama"
+                        style="max-width: 100%; max-height: 100%;">
+                </div>
+                <div class="image-container image-6">
+                    <img src="images-subsite/sea-5603352_640.jpg" alt="Sea" style="max-width: 100%; max-height: 100%;">
+                </div>
+                <div class="image-container image-7">
+                    <img src="images-subsite/waterfalls-1417102_640.jpg" alt="Waterfall"
+                        style="max-width: 100%; max-height: 100%;">
+                </div>
+                <div class="image-container image-8">
+                    <img src="images-subsite/waters-3095682_640.jpg" alt="River"
+                        style="max-width: 100%; max-height: 100%;">
+                </div>
+                <div class="image-container image-9">
+                    <img src="images-subsite/waters-3102729_640.jpg" alt="Lake"
+                        style="max-width: 100%; max-height: 100%;">
+                </div>
+                <div class="image-container image-10">
+                    <img src="images-subsite/torrent-87_640.jpg" alt="Torrent"
+                        style="max-width: 100%; max-height: 100%;">
+                </div>
+                <div class="image-container image-11">
+                    <img src="images-subsite/3.jpg" alt="Torrent"
+                        style="max-width: 100%; max-height: 100%;">
+                </div>
+                <div class="image-container image-12">
+                    <img src="images-subsite/4.jpg" alt="Torrent"
+                        style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+</html>

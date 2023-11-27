@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ASV Bad Nauheim</title>
+    <link rel="shortcut icon" href="images/lol2.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Poppins, sans-serif;
+        }
+
+        body>div {
+            width: 1920px;
+            height: 1080px;
+            background-color: inherit;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .webseite {
+            width: 1920px;
+            height: auto;
+            padding: 0;
+        }
+
+        /* Navigation */
+        .nav-bar {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(255, 255, 255);
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+
+        nav>img {
+            text-decoration: none;
+            margin-left: 200px;
+            width: auto;
+            height: 100px;
+            margin-top: 0px;
+        }
+
+        ul.nav1text {
+            display: flex;
+            flex-direction: row;
+            height: 40px;
+            float: right;
+            margin-top: 40px;
+            margin-right: 200px;
+        }
+
+        .nav1text a {
+            color: #44768d;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        /* Start-seite */
+
+        section-1>h1 {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            font-size: 20px;
+
+        }
+
+        h1.asv-bad-nauheim {
+            font-size: 80px;
+            color: black;
+            text-align: center;
+            padding-top: 320px;
+        }
+
+        /* Kontakt */
+
+        .section-5 {
+
+            text-align: center;
+            width: 100%;
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size: 34px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            padding-top: 80px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        ul li strong {
+            font-weight: 700;
+        }
+
+        ul li a {
+            color: #1f4139;
+            text-decoration: none;
+        }
+
+        ul li a:hover {
+            color: #000;
+        }
+
+        /* Footer */
+
+        .section-6 {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-links li {
+            margin-right: 10px;
+        }
+
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .footer-links a:hover {
+            color: #000;
+        }
+
+        .copyright {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .section-4 h1 {
+            text-align: center;
+            font-size: 40px;
+            padding-top: 50px;
+        }
+
+        .section-4 button {
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #023c75;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            position: relative;
+            top: 9%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .section-4 button:hover {
+            background-color: #ffffff;
+            color: #023c75;
+        }
+
+        div.vorstand {
+            width: 1300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /*Gewässer*/
+        div.gewassser {
+            width: 1300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 150px;
+        }
+
+        button.mehrubergewasser {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #36506d;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            position: relative;
+            top: 9%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: 50px;
+        }
+
+        button.mehrubergewasser:hover {
+            background-color: #ffffff;
+            color: #36506d;
+        }
+
+        .section-3 h1 {
+            text-align: center;
+            font-size: 40px;
+            padding-top: 50px;
+        }
+
+        .section-3 {
+            min-height: 1000px;
+        }
+
+        #kontakt {
+            transition: all 0.5s ease;
+        }
+
+        #kontakt:hover {
+            transform: scale(1.1);
+            top: 5px;
+        }
+
+        #gewaesser {
+            transition: all 0.5s ease;
+        }
+
+        #gewaesser:hover {
+            transform: scale(1.1);
+            top: 5px;
+        }
+
+        #ueber-uns {
+            transition: all 0.5s ease;
+        }
+
+        #ueber-uns {
+            transform: scale(1.1);
+            top: 5px;
+        }
+
+        #mitglied-werden {
+            transition: all 0.5s ease;
+        }
+
+        #mitglied-werden {
+            transform: scale(1.1);
+            top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="website">
+        <div class="section-1"
+            style="background-color: white; background-image: url(images/1337398.png); background-size: 1920px; width: 1920px; height: 920px; margin-top: -27px;">
+            <nav class="nav-bar">
+                <img src="images/lol.jpg" alt="logo">
+                <ul class="nav1text">
+                    <li><a href="#">Startseite</a></li>
+                    <li><a href="#ueber-uns">Über uns</a></li>
+                    <li><a href="#gewaesser">Gewässer</a></li>
+                    <li><a href="#mitglied-werden">Mitglied werden</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+            <h1 class="asv-bad-nauheim">ASV Bad Nauheim</h1>
+            <p style="font-size: 22px; width: 70%; margin-left: 15%;text-align: center; color:  rgb(0, 0, 0);"> <span
+                    style="color: #ffffff ;">Der AS</span>V Bad Nauheim e.V. wurde
+                1968 von angelsportbegeisterten Bürgern aus Bad Nauheim und Umgebung
+                gegründet. <span style="color: #ffffff;">Seither</span> hat unser Verein stetig an Beliebtheit und
+                Mitgliedern gewonnen. Unser besonderes
+                Anliegen ist, das traditionsreiche Hobby des Angelns zu erhalten und an die nachkommende Generation
+                weiter
+                zu geben.</p>
+        </div>
+
+        <div class="section-2" style="background-color: #a9dcff; height: 920px; margin-top: -47px;">
+            <h1 style="font-size: 70px; padding-left: 25%; padding-top: 20%; color: rgb(17, 54, 66);" id="ueber-uns">
+                Über uns</h1>
+            <p style="color: rgb(21, 63, 77) ; width: 600px; padding-left: 17%; text-align: center; font-size: large;">
+                Unser Verein wurde am 14.12.1968 gegründet und setzt sich zur Zeit aus
+                55 aktiven, 13 jugendlichen und 3
+                passiven Mitgliedern zusammen.
+            </p>
+            <img src="images/anglers-929921_1280.jpg"
+                style="width: 600px; position: relative; left: 60%; top: -320px; border-radius: 5px;" alt="ueber-uns">
+        </div>
+
+        <div class="section-3" style="background-color:  #65ccc7; height: 1000px; margin-top: -42px;">
+
+            <h1 style="padding-top: 100px; font-size: 60px; margin-bottom: -100px;;" id="gewaesser">Gewässer</h1>
+            <div class="gewassser" style="padding-top: -100px;">
+                <img src="images/schonnerewasser.jpg" style="width: 640px; height: 300px; border-radius: 10px;" alt="">
+
+                <img src="images/schonwasser.jpg" style="width: 640px; height: 300px; border-radius: 10px;" alt="">
+            </div>
+            <a href="subsite.html"> <button class="mehrubergewasser" style="margin-top: 100px;">Mehr über unsere
+                    Gewässer!</button> </a>
+            <div id="mitglied-werden"></div>
+        </div>
+
+        <div class="section-4" style="background-color: #5d8c9b; height: 800px; margin-top: -40px;">
+            <h1 style="font-size: 60px;">Mitglied werden</h1>
+            <p style="text-align: center; font-size: 22px; width: 800px; padding-left: 28%; color: #072e3b;">Die Anzahl
+                der aktiven Mitglieder ist zur Zeit auf 70 begrenzt. Ist diese Grenze erreicht, werden
+                aufnahmewillige auf die Warteliste gesetzt und informiert, wenn die Möglichkeit zum Eintritt besteht.
+            </p>
+            <div class="vorstand">
+                <img src="images/240_F_195153596_gDl6660oRhGuKX4YiZZj3CimFyxeE20l.jpg"
+                    style="width: 400px; height: auto; border-radius: 5px;" alt="">
+                <img src="images/240_F_225644336_4oSJYMSE5QwKQSGrMoexzXrnhvlzieJc.jpg"
+                    style="width: 400px; height: auto; border-radius: 5px;" alt="">
+                <img src="images/240_F_192047422_HbQMk951KDkgN4PJM68ni4ShgSdoE5oL.jpg"
+                    style="width: 400px; height: auto; border-radius: 5px;" alt="">
+            </div>
+            <a href="#kontakt"> <button>Werden Sie heute Mitglied!</button></a>
+        </div>
+        <div class="section-5" style="background-color: #3b7b6c; height: 500px; margin-top: -27px; color: #fafafa;"
+            id="Kontakt">
+            <h1 id="kontakt">Kontakt</h1>
+            <p style="font-size: 24px;">
+                Wir sind gerne für Sie da. Kontaktieren Sie uns per Telefon, E-Mail oder in den sozialen Medien.
+            </p>
+            <ul>
+                <li>
+                    <strong>Telefon:</strong> 01522-8858 356
+                </li>
+                <li>
+                    <strong>E-Mail:</strong> vorstand@asv-bad-nauheim.de
+                </li>
+                <li>
+                    <strong>Adresse:</strong> Rödger Weg 22, 61231 Bad Nauheim
+                </li>
+            </ul>
+        </div>
+
+        <div class="section-6" style="background-color: gray; height: 100px; margin-top: -27px;">
+            <div class="container" style="flex-direction: column; justify-content: center;">
+                <ul class="footer-links" style="margin-top: 20px ;">
+                    <li><a href="#ueber-uns">Über uns</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#">Datenschutzrichtlinie</a></li>
+                </ul>
+                <p style="margin-top: -5px ;">© 2023 ASV Bad Nauheim. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
